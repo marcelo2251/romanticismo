@@ -1,0 +1,30 @@
+/*******************************************************************************/
+/* Web del Romanticismo                                                        */
+/* Hoja de estilo de La canción del Pirata                                     */
+/* autor: Martín Morente Vargas                                                */
+/* versión: 1.0                                                                */
+/* 4 de Noviembre de 2022                                                      */
+/*******************************************************************************/
+
+/***************************ESTILO GENERAL**************************************/
+
+@font-face {
+    src: url(../Fonts/Alatas\ Script.ttf);
+    font-family: escritura;
+}
+
+
+body {font-family: escritura;
+      font-size: 2.0em;
+      background-image: url(../Imágenes/adobe-stock.jpg);
+      background-repeat: repeat-y;
+      background-color: #65916e;
+      background-size: 15%;
+      background-position: right;
+    }
+
+#poema {                    /*El # se pone para referenciar a un id */
+        width: 33%;
+        margin-left: 30%;
+        color: rgb(59, 70, 68);
+       }

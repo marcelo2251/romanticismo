@@ -1,0 +1,142 @@
+/*******************************************************************************/
+/* Web del Romanticismo                                                        */
+/* Hoja de estilo para index                                                   */
+/* autor: Martín Morente Vargas                                                */
+/* versión: 1.0                                                                */
+/* 11 de Noviembre de 2022                                                     */
+/*******************************************************************************/
+/* ESTILO GENERAL*/    
+
+@font-face {
+    src: url('../Fonts/Mahartha\ Script\ TTF\ free.ttf');
+    font-family: titulos;
+    }
+
+    @font-face {
+        src: url('../Fonts/Social\ Tattoo\ Outline.ttf');
+        font-family: textos;
+    }
+
+* {box-sizing: border-box;}
+
+body {font-family: textos;
+        background-color: #AC9C8A;
+        margin: 0;padding: 0;}
+
+
+#wrapper {width: 80%;
+            background-color: white;
+             margin: auto;}
+
+/************************ HERO SECTION OPCIÓN 1: IMAGEN **************/
+
+
+#hero {background-image: url('../Imágenes/wanderer-above-the-sea-fog-friedrich.jpg');
+        height: 100vh;   /*para obligar a que se vea más allá del contenido para imagen de fondo*/
+        background-repeat: no-repeat;  /*para que no se repita la imagen*/
+        background-size: cover;              /* para que encaje en todo el fondo*/
+        background-position: center;    /*Fija lo que hay en el medio (pero también lo fija en todos los lados)*/
+        font-family: titulos;
+        font-size: 2rem;
+        padding-left: 5%; /*Estas dos cosas es para separar el texto*/
+        padding-top: 5%;
+        }
+
+#titulo {background-color: rgba(255,255,255,0.2);
+        width: 30%;
+        padding: 5%;
+        text-align: center;
+        border-radius: 50%;} /* Esto es para hacer que un rectángulo se vea como un círculo */
+
+
+/**************** HERO SECTION OPCIÓN 2: HAIKEI.APP + POSITION    **********************************/
+
+#hero2 {background-image: url(../Imágenes/low-poly-grid-haikei.svg);
+        height: 100vh;
+        background-repeat: no-repeat;
+        background-size:cover;
+        padding-left: 5%;
+        padding-top: 4%;
+
+        position:relative; /* el hero se mueve de sitio */
+
+}
+
+#titulo2 {font-family: titulo;
+        font-size: 3rem;
+        background-color: rgba(255, 255, 255, 0.25);
+        width: 50%;
+
+        position: absolute; /* se fija DENTRO de hero */
+        top: 50%;
+        left: 50%;
+        /* transform: translate(-50%,-50%); Estas cuatro reglas colocan una caja en medio de otra */
+
+        /* para el efecto frosted glass (fondo debe de ser blanco
+                        y con opacidad por debajo de 0.5)*/
+
+        backdrop-filter: blur(5px);
+        
+        
+}
+
+
+/************** HERO SECTION 3: COLOR LISO + GETWAVES **********************/
+
+#hero3 {background-color: #e7008a; /*El mismo color que la ola */
+        height: 40vh;/*cuando es color liso 100 vh es demasiado grande así que le pondremos menos*/
+
+
+        position: relative;
+
+}
+
+#titulo3 {font-family: titulos;
+          font-size: 4rem;
+          color: white;
+          
+
+           position:absolute;
+           top: 50%;
+           left: 50%;
+           transform: translate(-50%,-50%);
+
+
+}
+
+
+
+
+
+/************** MEDIA QUERIES 2*************/
+
+@media only screen and (width<=900px){
+                #wrapper {width: 100%;}
+                #titulo2 {width: 70%;
+                           font-size: 2rem;}
+}
+@media only screen and (width<=600px){
+        #wrapper {width: 100%;}
+        #titulo2 {width: 60%;}
+
+}
+
+
+
+/*************** MEDIA QUERIES *******************/
+
+/*@media only screen and (width<=900px){
+        #wrapper {width: 90%;}
+        #titulo {font-size: 1rem;
+                 width: 40%;}
+
+}
+
+@media only screen and (width<=600px){
+        #wrapper {width: 100%}
+        
+}
+
+
+
+
